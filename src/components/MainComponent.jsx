@@ -24,9 +24,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => ({
   addComment: (dishId, rating, author, comment) => dispatch(addComment(dishId, rating, author, comment)),
-  fetchDishes: () => {
-    dispatch(fetchDishes());
-  },
+  fetchDishes: () => dispatch(fetchDishes()),
   resetFeedbackForm: () => {
     dispatch(actions.reset("feedback"));
   },
@@ -51,6 +49,7 @@ class Main extends Component {
 
   render() {
     const HomePage = () => {
+      console.log("@@@@@@", this.props);
       return (
         <Home
           dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
