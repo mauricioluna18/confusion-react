@@ -1,0 +1,466 @@
+{
+  "entidad": {
+    "type": "string",
+    "rename": "ENT",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 4,
+    "defaultValue": "0127"
+  },
+  "tipoInstrumento": {
+    "type": "string",
+    "rename": "TYP_INSTR",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 8
+  },
+  "codPortafolio": {
+    "type": "string",
+    "rename": "COD_PORTFOLIO",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 4
+  },
+  "contrato": {
+    "type": "string",
+    "rename": "ACC",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 10
+  },
+  "contratoContraparte": {
+    "type": "string",
+    "rename": "ACC_COUNTERPART",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 10
+  },
+  "contratoLiquidacion": {
+    "type": "string",
+    "rename": "ACC_LIQ",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 10
+  },
+  "contratoCostodio": {
+    "type": "string",
+    "rename": "ACC_CUSTODY",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 10
+  },
+  "codInstrumento": {
+    "type": "string",
+    "rename": "COD_INSTR",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 15
+  },
+  "emisor": {
+    "type": "string",
+    "rename": "COD_ISSUER",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 3
+  },
+  "moneda": {
+    "type": "string",
+    "rename": "FCC",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 4
+  },
+  "fechaVencimiento": {
+    "type": "string",
+    "rename": "DAT_MATURITY",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 10
+  },
+  "fechaAlta": {
+    "type": "string",
+    "rename": "DAT_PROCESS",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 10
+  },
+  "fechaLiquidacion": {
+    "type": "string",
+    "rename": "DAT_LIQ",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 10
+  },
+  "fechaValor": {
+    "type": "string",
+    "rename": "DAT_VALUE",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 10
+  },
+  "tasaReferencia": {
+    "type": "string",
+    "rename": "COD_RATE",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 10
+  },
+  "sobretasa": {
+    "type": "number",
+    "rename": "OVER_RATE",
+    "required": false,
+    "maxDecimals": 8,
+    "minLength": 0,
+    "maxLength": 14
+  },
+  "plazo": {
+    "type": "number",
+    "rename": "NUM_TERM",
+    "required": true,
+    "maxDecimals": 0,
+    "minLength": 1,
+    "maxLength": 6
+  },
+  "plazoReferencia": {
+    "type": "string",
+    "rename": "NUM_TERM_REF",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 8
+  },
+  "monto": {
+    "type": "number",
+    "rename": "AMT_OPERATION",
+    "required": true,
+    "maxDecimals": 2,
+    "minLength": 1,
+    "maxLength": 22
+  },
+  "precio": {
+    "type": "number",
+    "rename": "PRICE",
+    "required": false,
+    "maxDecimals": 8,
+    "minLength": 0,
+    "maxLength": 22
+  },
+  "tipoConcertacion": {
+    "type": "string",
+    "rename": "TYP_AMT",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 2
+  },
+  "tasaOperacion": {
+    "type": "number",
+    "rename": "OPERATION_RATE",
+    "required": false,
+    "maxDecimals": 8,
+    "minLength": 0,
+    "maxLength": 14
+  },
+  "tasaRetorno": {
+    "type": "number",
+    "rename": "RETURN_RATE",
+    "required": false,
+    "maxDecimals": 8,
+    "minLength": 0,
+    "maxLength": 14
+  },
+  "tasaRendimiento": {
+    "type": "number",
+    "rename": "YIELD_RATE",
+    "required": false,
+    "maxDecimals": 8,
+    "minLength": 0,
+    "maxLength": 14
+  },
+  "codBroker": {
+    "type": "string",
+    "rename": "COD_BROKER",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 10
+  },
+  "tipoPostura": {
+    "type": "string",
+    "rename": "TYP_POSTURE",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 4
+  },
+  "codCustodio": {
+    "type": "string",
+    "rename": "COD_CUSTODIAN",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 8
+  },
+  "codIntencionalidad": {
+    "type": "string",
+    "rename": "COD_INTENTIONALLITY",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 2
+  },
+  "comentario": {
+    "type": "string",
+    "rename": "COMMENT",
+    "required": false,
+    "minLength": 1,
+    "maxLength": 25
+  },
+  "modulo": {
+    "type": "number",
+    "rename": "COD_MODULE",
+    "required": true,
+    "maxDecimals": 0,
+    "minLength": 1,
+    "maxLength": 2,
+    "defaultValue": 35
+  },
+  "emisora": {
+    "type": "string",
+    "rename": "COD_ISSUE",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 15
+  },
+  "serie": {
+    "type": "string",
+    "rename": "COD_SERIE",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 15
+  },
+  "operacionCruce": {
+    "type": "string",
+    "rename": "OPERATION_CROSS",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 7,
+    "defaultValue": ""
+  },
+  "traspasoInterno": {
+    "type": "string",
+    "rename": "TRANSFER_INTERNAL",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 1
+  },
+  "tasaCupon": {
+    "type": "number",
+    "rename": "COUPON_RATE",
+    "required": false,
+    "maxDecimals": 8,
+    "minLength": 0,
+    "maxLength": 12
+  },
+  "flagTasaYield": {
+    "type": "string",
+    "rename": "FLAG_YIELD_RATE",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 1
+  },
+  "flagPrecio": {
+    "type": "string",
+    "rename": "FLAG_PRICE",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 1
+  },
+  "flagSobreTasa": {
+    "type": "string",
+    "rename": "FLAG_OVER_RATE",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 1
+  },
+  "flagRatRate": {
+    "type": "string",
+    "rename": "FLAG_RAT_RATE",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 1
+  },
+  "monedaLiq": {
+    "type": "string",
+    "rename": "FCC_LIQ",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 4
+  },
+  "tipoCambio": {
+    "type": "number",
+    "rename": "EXCHANGE",
+    "required": false,
+    "maxDecimals": 8,
+    "minLength": 0,
+    "maxLength": 18
+  },
+  "intencionalidadOper": {
+    "type": "number",
+    "rename": "DEAL_PURPOSE",
+    "required": false,
+    "maxDecimals": 0,
+    "minLength": 0,
+    "maxLength": 2
+  },
+  "folioPapel": {
+    "type": "string",
+    "rename": "SEQ_PARAMT",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 11
+  },
+  "codigoMercado": {
+    "type": "number",
+    "rename": "COD_MARKET",
+    "required": true,
+    "maxDecimals": 0,
+    "minLength": 1,
+    "maxLength": 2,
+    "defaultValue": 8
+  },
+  "tipoOperacion": {
+    "type": "string",
+    "rename": "TYP_OPERATION",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 3
+  },
+  "tipoInventario": {
+    "type": "number",
+    "rename": "TYPE_INVENTORY",
+    "required": true,
+    "maxDecimals": 0,
+    "minLength": 1,
+    "maxLength": 2,
+    "defaultValue": 2
+  },
+  "generaRegistro": {
+    "type": "string",
+    "rename": "GeneraRegistro",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 8,
+    "defaultValue": "SI"
+  },
+  "fuenteOperacion": {
+    "type": "string",
+    "rename": "SOURCEE",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 4
+  },
+
+  "origen": {
+    "type": "string",
+    "rename": "ORIGEN",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 3,
+    "defaultValue": "VX"
+  },
+  "tasaPromocion": {
+    "type": "number",
+    "rename": "PROMOTION_RATE",
+    "required": false,
+    "maxDecimals": 4,
+    "minLength": 0,
+    "maxLength": 18
+  },
+  "flagFechaValor": {
+    "type": "string",
+    "rename": "FLG_DAT_VALUE",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 2,
+    "defaultValue": "SI"
+  },
+  "numeroCajon": {
+    "type": "string",
+    "rename": "NUM_DRAWER",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 25,
+    "defaultValue": 0
+  },
+  "instrumentoBase": {
+    "type": "string",
+    "rename": "INSTR_BASIS",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 8,
+    "defaultValue": 0
+  },
+  "tasaMercado": {
+    "type": "number",
+    "rename": "MARKET_RATE",
+    "required": true,
+    "maxDecimals": 4,
+    "minLength": 1,
+    "maxLength": 14,
+    "defaultValue": 0
+  },
+  "flagAttack": {
+    "type": "string",
+    "rename": "FLG_ATTACK",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 1
+  },
+  "claveInvProcedencia": {
+    "type": "string",
+    "rename": "CLV_INV_PROC",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 4
+  },
+  "tipoReporto": {
+    "type": "string",
+    "rename": "CODE_INPUT",
+    "required": true,
+    "minLength": false,
+    "maxLength": 2
+  },
+  "horaRegistro": {
+    "type": "string",
+    "rename": "HoraRegistro",
+    "required": false,
+    "minLength": 0,
+    "maxLength": 26
+  },
+  "usuarioUltimaMod": {
+    "type": "string",
+    "rename": "CEN_LASTMOD",
+    "required": true,
+    "minLength": 1,
+    "maxLength": 8
+  },
+  "entidadUltimaMod": {
+    "type": "string",
+    "rename": "LASTMODUSER",
+    "required": false,
+    "minLength": 1,
+    "maxLength": 4,
+    "defaultValue": "0127"
+  },
+  "centroUltimaMod": {
+    "type": "string",
+    "rename": "ENT_LASTMOD",
+    "required": false,
+    "minLength": 1,
+    "maxLength": 4,
+    "defaultValue": "null"
+  },
+  "terminalUltimaMod": {
+    "type": "string",
+    "rename": "LMODNETNAME",
+    "required": false,
+    "minLength": 1,
+    "maxLength": 8,
+    "defaultValue": "W320"
+  }
+}

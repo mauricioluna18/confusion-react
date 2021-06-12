@@ -1,6 +1,11 @@
 import { Component } from "react";
-import { Navbar, NavbarBrand } from "reactstrap";
+import { BrowserRouter } from "react-router-dom";
+import Main from "./components/MainComponent";
 import "./App.css";
+import { Provider } from "react-redux";
+import { ConfigureStore } from "./redux/configureStore";
+
+const store = ConfigureStore();
 
 //function App() {
 //   return (
@@ -17,13 +22,13 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Navbar dark color="primary">
-          <div className="container">
-            <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
+      <Provider store={store}>
+        <BrowserRouter>
+          <div className="App">
+            <Main />
           </div>
-        </Navbar>
-      </div>
+        </BrowserRouter>
+      </Provider>
     );
   }
 }
